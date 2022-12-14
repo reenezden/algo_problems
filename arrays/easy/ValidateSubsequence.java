@@ -7,8 +7,11 @@ public class ValidateSubsequence {
         int arrIndex = 0; //Set list/array index to zero
         int seqIndex = 0; //set sequence/array index to zero
 
+        //array = [5, 1, 22, 25, 6, -1, 10, 8]
+        //sequence = [11, 6, -1, 10]
+
          //Stop looping if we reach the end of the array and sequence Index
-        if ( arrIndex < array.size() && seqIndex < array.size() ) {
+        while ( arrIndex < array.size() && seqIndex < array.size() ) {
 
            //Check if a match has been found
             if ( array.get( arrIndex ) == sequence.get( seqIndex ) ) {
@@ -21,8 +24,9 @@ public class ValidateSubsequence {
             arrIndex++;
 
             //If we have reached the end of the sequence, that means we have traversed the entire sequence so we can return
-            return ( seqIndex == sequence.size();
+            return  seqIndex == sequence.size();
         }
+        return false;
     }
 
 }
