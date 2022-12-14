@@ -9,8 +9,15 @@ public class Day3SortedSquaredArray {
 		// defining an array of integer type
 		// sample one 90, 23, 5, 109, 12, 22, 67, 34
 		// sample two 1, 2, 3, 5, 6, 8, 9
-		int[] array = new int[] { 1, 2, 3, 5, 6, 8, 9 };
+		
+		// Having the start time
+		long startTime = System.nanoTime();
+		
+		int[] array = new int[] { 5, 6, 8, 9 };
 		// invoking sort() method of the Arrays class
+
+		if (array.length <= 0)
+			return;
 
 		for (int i = 0; i < array.length; i++) {
 			array[i] = array[i] * array[i];
@@ -19,6 +26,10 @@ public class Day3SortedSquaredArray {
 		Arrays.sort(array);
 
 		System.out.println(Arrays.toString(array));
+		
+		// Having the end time
+		long endTime = System.nanoTime();
+		System.out.println("Took "+(endTime - startTime) + " ns"); 
 
 	}
 
