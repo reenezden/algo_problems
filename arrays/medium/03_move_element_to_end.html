@@ -1,24 +1,80 @@
 <div class="html">
-<p>
-  You're given an array of integers and an integer. Write a function that moves
-  all instances of that integer in the array to the end of the array and returns
-  the array.
-</p>
-<p>
-  The function should perform this in place (i.e., it should mutate the input
-  array) and doesn't need to maintain the order of the other integers.
-</p>
-<h3>Sample Input</h3>
-<pre><span class="CodeEditor-promptParameter">array</span> = [2, 1, 2, 2, 2, 3, 4, 2]
+  <p>
+    You're given an array of integers and an integer. Write a function that moves
+    all instances of that integer in the array to the end of the array and returns
+    the array.
+  </p>
+  <p>
+    The function should perform this in place (i.e., it should mutate the input
+    array) and doesn't need to maintain the order of the other integers.
+  </p>
+  <h3>Sample Input</h3>
+  <pre><span class="CodeEditor-promptParameter">array</span> = [2, 1, 2, 2, 2, 3, 4, 2]
 <span class="CodeEditor-promptParameter">toMove</span> = 2
 </pre>
-<h3>Sample Output</h3>
-<pre>[1, 3, 4, 2, 2, 2, 2, 2] <span class="CodeEditor-promptComment">// the numbers 1, 3, and 4 could be ordered differently</span>
+  <h3>Sample Output</h3>
+  <pre>[1, 3, 4, 2, 2, 2, 2, 2] <span class="CodeEditor-promptComment">// the numbers 1, 3, and 4 could be ordered differently</span>
 </pre>
 </div>
 
 Signature:
 public static List<Integer> moveElementToEnd(List<Integer> array, int toMove) {
-  // Write your code here.
-  return new ArrayList<Integer>();
-}
+    // Write your code here.
+    return new ArrayList<Integer>();
+      }
+
+      Test Case 1
+      {
+      "array": [2, 1, 2, 2, 2, 3, 4, 2],
+      "toMove": 2
+      }
+      Test Case 2
+      {
+      "array": [],
+      "toMove": 3
+      }
+      Test Case 3
+      {
+      "array": [1, 2, 4, 5, 6],
+      "toMove": 3
+      }
+      Test Case 4
+      {
+      "array": [3, 3, 3, 3, 3],
+      "toMove": 3
+      }
+      Test Case 5
+      {
+      "array": [3, 1, 2, 4, 5],
+      "toMove": 3
+      }
+      Test Case 6
+      {
+      "array": [1, 2, 4, 5, 3],
+      "toMove": 3
+      }
+      Test Case 7
+      {
+      "array": [1, 2, 3, 4, 5],
+      "toMove": 3
+      }
+      Test Case 8
+      {
+      "array": [2, 4, 2, 5, 6, 2, 2],
+      "toMove": 2
+      }
+      Test Case 9
+      {
+      "array": [5, 5, 5, 5, 5, 5, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
+      "toMove": 5
+      }
+      Test Case 10
+      {
+      "array": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 5, 5, 5, 5, 5, 5],
+      "toMove": 5
+      }
+      Test Case 11
+      {
+      "array": [5, 1, 2, 5, 5, 3, 4, 6, 7, 5, 8, 9, 10, 11, 5, 5, 12],
+      "toMove": 5
+      }
